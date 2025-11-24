@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Directorio de documentos de la app -->
+    <files-path name="files" path="." />
+
+    <!-- Directorio externo de documentos -->
+    <external-files-path name="external_files" path="." />
+
+    <!-- Cache externo -->
+    <external-cache-path name="external_cache" path="." />
+
+    <!-- Downloads públicos (si necesitas compartir desde Downloads) -->
+    <external-path name="external_downloads" path="Download/" />
+</paths>
