@@ -1,7 +1,39 @@
+# PocCubicasa - 3D Floor Plan Scanner
 
+## 📱 What is this application?
+
+**PocCubicasa** is a React Native mobile application that allows you to scan interior spaces in 3D using your device's camera to generate digital floor plans.
+
+### 🎯 Main Use Case
+
+This app is designed for **real estate professionals, architects, interior designers, and appraisers** who need to:
+- Create accurate floor plans of properties
+- Document interior space dimensions
+- Generate 3D models of environments without specialized equipment
+
+### ✨ Key Features
+
+- **Real-time 3D scanning** using augmented reality (AR)
+- **Multiple scan management** with metadata (address, property type, date)
+- **Works offline** - no internet connection required during scanning
+- **Data export** in CubiCasa-compatible format
+- **Intuitive interface** with scan list and detailed capture information
+
+### 📲 Device Requirements
+
+#### iOS
+- iPhone 6s or newer
+- iOS 11 or higher
+- ARKit (included with iOS)
+
+#### Android
+- ARCore certified device ([see full list](https://developers.google.com/ar/devices))
+- Android 7.0 or higher
+- Examples: Samsung Galaxy S7+, Google Pixel, OnePlus 5+
+
+---
 
 ## Project Structure
-
 ```
 PocCubicasa/
 ├── android/
@@ -57,7 +89,6 @@ PocCubicasa/
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
 To start the Metro dev server, run the following command from the root of your React Native project:
-
 ```sh
 # Using npm
 npm start
@@ -112,7 +143,6 @@ ARCore is separate app → Google certifies devices → Only certified devices c
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
 ### Android
-
 ```sh
 # Using npm
 npm run android
@@ -168,19 +198,16 @@ The app uses:
 For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
 
 The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
 ```sh
 bundle install
 ```
 
 Then, and every time you update your native dependencies, run:
-
 ```sh
 bundle exec pod install
 ```
 
 For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
 ```sh
 # Using npm
 npm run ios
@@ -204,7 +231,6 @@ This is one way to run your app — you can also build it directly from Android 
 ## 3. Configure the CubiCasa SDK
 
 ### 3.1. Open the Xcode workspace
-
 ```bash
 open ios/PocCubicasa.xcworkspace
 ```
@@ -215,7 +241,6 @@ In Xcode, select the project (blue file "PocCubicasa")
 Go to the "Package Dependencies" tab
 Click the "+" button (bottom left)
 In "Search or Enter Package URL", paste:
-
 ```
 https://github.com/CubiCasa/ios-sdk-distribution
 ```
@@ -235,4 +260,3 @@ Verify that CubiCaptureSDK.framework is configured as:
 ## Step 4: Modify your app
 
 Now that you have successfully run the app, let's make changes!
-
